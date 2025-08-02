@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: #e0e0e0;
+  --app-bg-color: #ffffff;
+  --border-color: rgb(173, 172, 172);
+  --text-color: black;
+  --input-bg-color: #ffffff;
+  --btn-save-bg-color: #4c9feb;
+  --btn-save-text-color: whitesmoke;
+  --note-border-color: #efe4af;
+  --note-title-bg-color: #fefddf;
+  --edit-color: #275b79;
+  --delete-text: #cf3723;
+  --cancel-btn-bg-color: rgb(219, 214, 214);
+  --cancel-btn-color: black;
+  --toggle-bg: #d3d3d3;
+  --toggle-handle: #4c9feb;
+}
+
+.dark-mode {
+  --main-bg-color: #1e1e1e;
+  --app-bg-color: #2a2a2a;
+  --border-color: #444;
+  --text-color: #f2f2f2;
+  --input-bg-color: #333;
+  --btn-save-bg-color: #357abd;
+  --btn-save-text-color: #f9f9f9;
+  --note-border-color: #555;
+  --note-title-bg-color: #3b3b3b;
+  --edit-color: #64b5f6;
+  --delete-text: #ef5350;
+  --cancel-btn-bg-color: #555;
+  --cancel-btn-color: #f2f2f2;
+  --toggle-bg: #333;
+  --toggle-handle: #f5c542; 
+}

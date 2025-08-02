@@ -1,0 +1,61 @@
+.add-note-btn {
+  width: 100%;
+  height: 15%;
+  background-color: var(--btn-save-bg-color);
+  cursor: pointer;
+  border: unset;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: var(--btn-save-text-color);
+  font-size: 20px;
+}
+
+.add-note-btn:hover {
+  background-color: var(--btn-save-bg-color);
+}
+
+.edit-btns-parent {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.save-btn,
+.cancel-btn {
+  width: 45%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: var(--cancel-btn-bg-color);
+  color: var(--cancel-btn-color);
+}
+
+.save-btn {
+  background-color: var(--btn-save-bg-color);
+  color: var(--btn-save-text-color);
+}
+
+.add-note-btn:active,
+.save-btn:active,
+.cancel-btn:active {
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}

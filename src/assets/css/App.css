@@ -1,0 +1,17 @@
+.App-parent {
+  background-color: var(--app-bg-color);
+  width: 100%;
+  max-width: 400px;
+  height: 600px;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}

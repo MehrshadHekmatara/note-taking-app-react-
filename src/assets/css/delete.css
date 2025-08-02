@@ -1,0 +1,4 @@
+.delete-text {
+  color: var(--delete-text);
+  cursor: pointer;
+}

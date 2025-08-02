@@ -1,0 +1,58 @@
+.sub-note {
+  width: 100%;
+  border: 2px solid var(--note-border-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.sub-note:last-child {
+  margin-bottom: 0;
+}
+
+.sub-note-title {
+  font-weight: lighter;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  background-color: var(--note-title-bg-color);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: var(--text-color);
+}
+
+.sub-note-content {
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.sub-note-text {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  white-space: pre-wrap;
+  text-transform: lowercase;
+  color: var(--text-color);
+}
+
+.delete-edit-btn {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
