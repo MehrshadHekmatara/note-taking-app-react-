@@ -11,10 +11,24 @@ function SubNote({
   setTitle,
   setCurrentNoteIndex,
 }) {
+  const pinBtn = function () {
+    noteHolder[index].pin = !noteHolder[index].pin;
+    const newArr = [...noteHolder];
+    newArr.sort((a, b) => {
+      if (a.pin === b.pin) {
+        return a.id - b.id;
+      }
+      return b.pin - a.pin;
+    });
+    setNote(newArr);
+  };
   return (
     <>
       <div className="sub-note">
-        <h4 className="sub-note-title">{title}</h4>
+        <div className="top">
+          <h4 className="sub-note-title">{title}</h4>
+          <p onClick={pinBtn}>pin</p>
+        </div>
         <div className="sub-note-content">
           <p className="sub-note-text">{content}</p>
           <div className="delete-edit-btn">

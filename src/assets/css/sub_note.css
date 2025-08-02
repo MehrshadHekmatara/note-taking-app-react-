@@ -19,11 +19,9 @@
   font-size: 15px;
   width: 100%;
   height: 30px;
-  background-color: var(--note-title-bg-color);
   display: flex;
   align-items: center;
   padding-left: 10px;
-  color: var(--text-color);
 }
 
 .sub-note-content {
@@ -55,4 +53,17 @@
   position: absolute;
   bottom: 0;
   right: 5px;
+}
+
+.top {
+  background-color: var(--note-title-bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.top p {
+  cursor: pointer;
 }

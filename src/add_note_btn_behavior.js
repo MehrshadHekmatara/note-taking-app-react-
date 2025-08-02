@@ -10,7 +10,7 @@ const addNoteBehavior = function (setNote, noteHolder, headerTitle) {
     return;
   }
 
-  setNote([...noteHolder, { title: titleValue, content: contentValue }]);
+  setNote([...noteHolder, { title: titleValue, content: contentValue, pin:false, id: Date.now() }]);
   titleInput.value = "";
   titleInput.blur();
   contentInput.value = "";
