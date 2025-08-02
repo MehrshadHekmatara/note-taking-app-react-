@@ -29,10 +29,20 @@ export default function LayoutAnimation() {
   const toggleSwitch = () => setIsOn(!isOn);
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setIsOn(true);
+      document.body.classList.add("dark-mode");
+    }
+  }, []);
+
+  useEffect(() => {
     if (isOn) {
       document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
     } else {
       document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
     }
   }, [isOn]);
 
